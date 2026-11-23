@@ -2,11 +2,12 @@
 title: "Henry Floyd"
 image: C:\Users\floyd\Downloads\2_Henry_26
 about:
+  image-shape: round
   template: trestles
   links:
     - text: LinkedIn
       href: www.linkedin.com/in/henry-floyd-01046a319
-6     target: _blank
+      target: _blank
     - text: GitHub
       href: https://github.com/floydhen1-prog
       target: _blank 
