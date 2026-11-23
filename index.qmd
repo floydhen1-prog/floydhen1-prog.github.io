@@ -1,9 +1,11 @@
 ---
 title: "Henry Floyd"
-image: C:\Users\floyd\Downloads\2_Henry_26
+image: floydhen1-prog.github.io/media/2_Henry_26.png
+toc: false
 about:
+  template: broadside
   image-shape: round
-  template: trestles
+  image-width: 17em
   links:
     - text: LinkedIn
       href: www.linkedin.com/in/henry-floyd-01046a319
@@ -15,4 +17,4 @@ about:
       href: floydhen1@gmail.com
 ---
 
-This is a test. AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+This is a test. I don't know why I cant get this image to load
