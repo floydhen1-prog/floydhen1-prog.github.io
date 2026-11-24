@@ -1,0 +1,219 @@
+---
+title: "Chloropleth Maps"
+format: html
+---
+
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+library(tidyverse)
+library(mdsr)
+library(maps)
+library(viridis)
+library(leaflet)
+library(sf) 
+library(rvest)
+library(polite)
+library(htmltools)
+library(glue)
+
+library(maps)
+states_polygon <- as_tibble(map_data("state")) |>
+  select(region, group, order, lat, long)
+
+states_sf <- 
+  read_sf("https://rstudio.github.io/leaflet/json/us-states.geojson") |>
+  select(name, geometry)
+
+library(poliscidata)   # may have to install first
+polisci_data <- as_tibble(poliscidata::states)
+
+
+us_states <- map_data("state")
+
+```
+
+
+
+
+
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+alcohol_states <- (as_tibble(poliscidata::states)) |>
+  select(state, alcohol) |>
+  mutate(state = str_to_lower(str_squish(state))) 
+
+
+states_polygon <- states_polygon |>
+  mutate(state = str_remove_all(region, " ")) |>
+  select(-region)
+
+
+states_sf <- states_sf |>
+  mutate(state = str_to_lower(name)) |>
+  mutate(state = str_remove_all(state, " ")) |>
+  select(-name)
+```
+
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+alc_static <- left_join(states_polygon, alcohol_states, by = "state")
+
+alc_int <- left_join(states_sf, alcohol_states, by = "state") |>
+  mutate(label = str_c("The alcohol consumption of ", state, " is ", alcohol, " gal/capita")) |>
+  filter(!is.na(alcohol))
+
+```
+
+
+
+```{r, fig.cap="Static Plot of Alcohol Consumption Across U.S. States", fig.width=10}
+#| echo: false
+#| message: false
+#| warning: false
+
+alc_static |>
+ggplot(mapping = aes(x = long, y = lat, group = group)) + 
+    geom_polygon(aes(fill = alcohol), color = "black") +
+  labs(fill = "Alcohol Consumption in Gal/Capita", x = "Longitude", y = "Latitude")
+```
+
+In this map, we can see U.S. states with different alcohol consumption rates. Most of the country falls between 2-4.5 gallons per capita. Some standout states include Utah with the lowest consumption, likely due to Mormon populations, and surprisingly New Hampshire with over 4 gallons as the highest. 
+These statistics are sourced from the `states` dataset in the `poliscidata` R package, created by Philip Pollock and Barry Edwards. [https://www.rdocumentation.org/packages/poliscidata/versions/2.3.0/topics/states] 
+
+
+
+```{r, fig.cap="Interactive Plot of Alcohol Consumption Across U.S. States"}
+#| echo: false
+#| message: false
+#| warning: false
+
+bins <- c(1,1.5,2,2.5,3,3.5,4,4.5)
+pal <- colorBin("YlOrRd", domain = alcohol_states$alcohol, bins = bins)
+
+labels <- lapply(alc_int$label, HTML)
+
+alc_int |>
+leaflet() |>
+  addTiles() |>
+  setView(lng = -100, lat = 38, 
+            zoom = 3) |>
+  addPolygons(
+    fillColor = ~pal(alcohol),
+    weight = 2,
+    opacity = 1,
+    color = "black",
+    dashArray = "3",
+    fillOpacity = 0.7,
+    highlightOptions = highlightOptions(
+      weight = 5,
+      color = "#666",
+      dashArray = "",
+      fillOpacity = 0.7,
+      bringToFront = TRUE),
+      label = labels,
+    labelOptions = labelOptions(
+      style = list("font-weight" = "normal", padding = "3px 8px"),
+      textsize = "15px",
+      direction = "auto")) |>
+  addLegend(pal = pal, values = ~alcohol, opacity = 0.7, title = NULL,
+    position = "bottomright")
+
+```
+These statistics are sourced from the `states` dataset in the `poliscidata` R package, created by Philip Pollock and Barry Edwards. [https://www.rdocumentation.org/packages/poliscidata/versions/2.3.0/topics/states]
+
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+gay_support_states <- (as_tibble(poliscidata::states)) |>
+  select(state, gay_support3) |>
+  mutate(state = str_to_lower(str_squish(state))) |>
+  mutate(gay_support3 = str_replace_all(gay_support3, "Med", "medium")) |>
+  mutate(gay_support3 = str_to_lower(gay_support3)) |>
+  mutate(gay_support3 = fct_relevel(gay_support3, c("low", "medium", "high"))) 
+```
+
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+gs_static <- left_join(states_polygon, gay_support_states, by = "state")
+
+gs_int <- left_join(states_sf, gay_support_states, by = "state") |>
+  mutate(label = str_c("The public support for gay rights in ", state, " is ", gay_support3)) |>
+  filter(!is.na(gay_support3))
+
+```
+
+
+
+```{r, fig.cap="Static Plot of Gay Rights Support Across U.S. States", fig.width=10}
+#| echo: false
+#| message: false
+#| warning: false
+
+gs_static |>
+drop_na() |>
+ggplot(mapping = aes(x = long, y = lat, group = group)) + 
+    geom_polygon(aes(fill = gay_support3), color = "black") +
+  labs(fill = "Gay Rights Support Level", x = "Longitude", y = "Latitude")
+```
+
+This map describes 3 bins of gay rights support levels across U.S. states. In general, Northeast states and West Coast states like California and Washington are highly supportive, while the South generally expresses low support. The Midwest region shows medium support, such as Minnesota where the population is mixed between left-leaning cities and rural populations. One notable takeaway is the clear distinction of U.S. regions in gay rights support.
+These statistics are sourced from the `states` dataset in the `poliscidata` R package, created by Philip Pollock and Barry Edwards. [https://www.rdocumentation.org/packages/poliscidata/versions/2.3.0/topics/states]
+
+
+```{r, fig.cap="Interactive Plot of Gay Rights Support Across U.S. States"}
+#| echo: false
+#| message: false
+#| warning: false
+
+RdYlBu <- colorFactor("RdYlBu", domain = gay_support_states$gay_support3)
+
+labels <- lapply(gs_int$label, HTML)
+
+gs_int |>
+leaflet() |>
+  addTiles() |>
+  setView(lng = -100, lat = 38, 
+            zoom = 3) |>
+  addPolygons(
+    fillColor = ~RdYlBu(gay_support3),
+    weight = 2,
+    opacity = 1,
+    color = "black",
+    dashArray = "3",
+    fillOpacity = 0.7,
+    highlightOptions = highlightOptions(
+      weight = 5,
+      color = "#666",
+      dashArray = "",
+      fillOpacity = 0.7,
+      bringToFront = TRUE),
+      label = labels,
+    labelOptions = labelOptions(
+      style = list("font-weight" = "normal", padding = "3px 8px"),
+      textsize = "15px",
+      direction = "auto")) |>
+  addLegend(pal = RdYlBu, values =  ~gay_support3, opacity = 0.7, title = "Public Support for Gay Rights",
+    position = "bottomright")
+
+```
+
+These statistics are sourced from the `states` dataset in the `poliscidata` R package, created by Philip Pollock and Barry Edwards. [https://www.rdocumentation.org/packages/poliscidata/versions/2.3.0/topics/states]
