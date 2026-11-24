@@ -10,6 +10,7 @@ website:
         text: Home
       - about.qmd
       - Mini_Project_1_Floyd.qmd
+      - chloropleth.qmd
 
 format:
   html:

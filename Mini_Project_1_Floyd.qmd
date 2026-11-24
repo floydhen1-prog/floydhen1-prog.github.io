@@ -181,6 +181,7 @@ Amazon_Bigrams_Words |>
 The three most common non-numeric bigrams in 2020 were "fl oz", "gluten free", and "stainless steel", reflecting common purchases for drinks, allergen-friendly food, and tools/ instruments. This isn't very helpful for learning what specific products use these pairings, though. To examine the most common product titles that use these top 3 bigrams, we must str_detect() to pull products with any of the three. However, the titles are often too long to work with. In order to shorten the titles while retaining the bigram (in case the bigram is at the end of the string), we must create a new column that provides each row's bigram before shortening the title. By creating 3 logical categories for each bigram per product and pivot_longer(), we can create a single `type` column.
 
 ```{r, fig.dim=c(7,5)}
+#| echo: FALSE
 Amazon_Bigrams_Cat <-
   
 amazon_2020 |>
