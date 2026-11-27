@@ -1,11 +1,11 @@
 ---
 title: "Henry Floyd"
-image: floydhen1-prog.github.io/media/2_Henry_26.png
 toc: false
 about:
-  template: broadside
+  image: media/2_Henry_26.png
   image-shape: round
   image-width: 17em
+  template: trestles
   links:
     - text: LinkedIn
       href: www.linkedin.com/in/henry-floyd-01046a319
@@ -17,4 +17,8 @@ about:
       href: floydhen1@gmail.com
 ---
 
-This is a test. I don't know why I cant get this image to load
+#### Student 
+
+B.A. in Statistics and Data Science with Public Health Studies Concentration
+
+St. Olaf College \| 2028

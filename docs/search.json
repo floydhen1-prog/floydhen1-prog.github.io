@@ -1,5 +1,68 @@
 [
   {
+    "objectID": "resume.html",
+    "href": "resume.html",
+    "title": "Resume",
+    "section": "",
+    "text": "Bachelor of Arts | St. Olaf College | Northfield, Minnesota Expected Graduation: May 2028\nMajor: Statistics and Data Science | Concentration: Public Health Studies GPA: 3.85\nHonors & Awards: St Olaf Dean’s List for 3 Consecutive Semesters\nRelevant Coursework: The Business of Healthcare, Vaccines and Virology, Algorithms for Decision Making"
+  },
+  {
+    "objectID": "resume.html#education",
+    "href": "resume.html#education",
+    "title": "Resume",
+    "section": "",
+    "text": "Bachelor of Arts | St. Olaf College | Northfield, Minnesota Expected Graduation: May 2028\nMajor: Statistics and Data Science | Concentration: Public Health Studies GPA: 3.85\nHonors & Awards: St Olaf Dean’s List for 3 Consecutive Semesters\nRelevant Coursework: The Business of Healthcare, Vaccines and Virology, Algorithms for Decision Making"
+  },
+  {
+    "objectID": "resume.html#research-and-project-experience",
+    "href": "resume.html#research-and-project-experience",
+    "title": "Resume",
+    "section": "RESEARCH AND PROJECT EXPERIENCE",
+    "text": "RESEARCH AND PROJECT EXPERIENCE\nHealth Tech Strategy & Market Research Intern, Hugin Medical June - August 2026\n\nConducted U.S. healthcare system financial and resource usage research for a HIT health software startup based in Trondheim, Norway\n\nAuthored a narrative literature review summarizing the state of global research of guideline-adherent AI in evidence-based medicine, for use in the company’s EU Class IIa Medical Device Regulation application\n\nDelivered presentations on cost estimates and findings for assistance in finding U.S. customers, and interviewed local Indiana health system experts"
+  },
+  {
+    "objectID": "resume.html#work-experience",
+    "href": "resume.html#work-experience",
+    "title": "Resume",
+    "section": "WORK EXPERIENCE",
+    "text": "WORK EXPERIENCE\nPharmacy Technician, CVS Pharmacy | Bloomington, Indiana June - August 2025\n\nFilled prescriptions and completed patient prescription data entry from doctor’s offices\n\nAssisted customers with insurance and prescription issues, and learned pharmaceutical business and inventory skills\n\nCollaborated with pharmacists under high patient volume, low-staff conditions\n\nWaitstaff, Redbud Hills Retirement Home | Bloomington, Indiana August 2023 - August 2024\n\nAccommodated and served meals to senior residents, and spent time making connections to hold meaningful discussions with residents\n\nTree Tender, CanopyBloomington | Bloomington, Indiana June- July 2024\n\nCollaborated with fellow students to manage and maintain newly planted trees in public parks and trails\n\nEngaged in community learning events designed to teach dendrology and strengthen peer relationships"
+  },
+  {
+    "objectID": "resume.html#co-curricular-experience",
+    "href": "resume.html#co-curricular-experience",
+    "title": "Resume",
+    "section": "CO-CURRICULAR EXPERIENCE",
+    "text": "CO-CURRICULAR EXPERIENCE\nMember, Public Health Club | St. Olaf College September 2026 - Present\n\nParticipation in St Olaf’s student-led Public Health Equity and Wellness Club, to raise awareness for important community initiatives and outreach opportunities\n\nMember, Badminton Club | St. Olaf College September 2026 - Present\n\nRecently joined St Olaf’s student-led Badminton Club, a recreational space to play casual matches with peers and learn technical skills from advanced students\n\nMember, Norseman Band | St. Olaf College September 2024 - May 2025\n\nContinued tuba performance after 7 years of brass experience\n\nRehearsed music as an ensemble and section to perform at concerts and campus events"
+  },
+  {
+    "objectID": "resume.html#skills",
+    "href": "resume.html#skills",
+    "title": "Resume",
+    "section": "SKILLS",
+    "text": "SKILLS\nTechnical: R (Advanced), Python and SAS (Basic)\nLanguage: German and American Sign Language (Intermediate)"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Henry Floyd",
+    "section": "",
+    "text": "Student\nB.A. in Statistics and Data Science with Public Health Studies Concentration\nSt. Olaf College | 2028"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "This Quarto website was built with GitHub Pages through RStudio."
+  },
+  {
+    "objectID": "chloropleth.html",
+    "href": "chloropleth.html",
+    "title": "Chloropleth Maps",
+    "section": "",
+    "text": "Static Plot of Alcohol Consumption Across U.S. States\n\n\n\n\nIn this map, we can see U.S. states with different alcohol consumption rates. Most of the country falls between 2-4.5 gallons per capita. Some standout states include Utah with the lowest consumption, likely due to Mormon populations, and surprisingly New Hampshire with over 4 gallons as the highest. These statistics are sourced from the states dataset in the poliscidata R package, created by Philip Pollock and Barry Edwards. [https://www.rdocumentation.org/packages/poliscidata/versions/2.3.0/topics/states]\n\n\n\n\nInteractive Plot of Alcohol Consumption Across U.S. States\n\n\nThese statistics are sourced from the states dataset in the poliscidata R package, created by Philip Pollock and Barry Edwards. [https://www.rdocumentation.org/packages/poliscidata/versions/2.3.0/topics/states]\n\n\n\n\n\nStatic Plot of Gay Rights Support Across U.S. States\n\n\n\n\nThis map describes 3 bins of gay rights support levels across U.S. states. In general, Northeast states and West Coast states like California and Washington are highly supportive, while the South generally expresses low support. The Midwest region shows medium support, such as Minnesota where the population is mixed between left-leaning cities and rural populations. One notable takeaway is the clear distinction of U.S. regions in gay rights support. These statistics are sourced from the states dataset in the poliscidata R package, created by Philip Pollock and Barry Edwards. [https://www.rdocumentation.org/packages/poliscidata/versions/2.3.0/topics/states]\n\n\n\n\nInteractive Plot of Gay Rights Support Across U.S. States\n\n\nThese statistics are sourced from the states dataset in the poliscidata R package, created by Philip Pollock and Barry Edwards. [https://www.rdocumentation.org/packages/poliscidata/versions/2.3.0/topics/states]"
+  },
+  {
     "objectID": "Mini_Project_1_Floyd.html",
     "href": "Mini_Project_1_Floyd.html",
     "title": "Amazon Purchases Data",
@@ -25,7 +88,7 @@
     "href": "Mini_Project_1_Floyd.html#bigrams",
     "title": "Amazon Purchases Data",
     "section": "Bigrams",
-    "text": "Bigrams\nWhat about bigrams, however? Through unnesting our amazon_2020 dataset and sorting them without stopwords, and filtering any digits with str_detect(), we can sort them into the most common pairs. We are also removing the word “amazon” from the bigrams, to avoid brands such as “Amazon Basics”.\n\n\n\n\n\n\n\n\n\nThe three most common non-numeric bigrams in 2020 were “fl oz”, “gluten free”, and “stainless steel”, reflecting common purchases for drinks, allergen-friendly food, and tools/ instruments. This isn’t very helpful for learning what specific products use these pairings, though. To examine the most common product titles that use these top 3 bigrams, we must str_detect() to pull products with any of the three. However, the titles are often too long to work with. In order to shorten the titles while retaining the bigram (in case the bigram is at the end of the string), we must create a new column that provides each row’s bigram before shortening the title. By creating 3 logical categories for each bigram per product and pivot_longer(), we can create a single type column.\n\nAmazon_Bigrams_Cat &lt;-\n  \namazon_2020 |&gt;\n  \n  filter(str_detect(Title, \"fl oz|gluten free|stainless steel\")) |&gt;\n  count(Title, sort = TRUE) |&gt;\n# The most common products for the top-3 bigrams\n  mutate(\n    `fl oz` = str_detect(Title, \"fl oz\"),\n    `gluten free` = str_detect(Title, \"gluten free\"),\n    `stainless steel` = str_detect(Title, \"stainless steel\")\n         ) |&gt;\n# Each bigram is given a true\\false column.\n  \n  pivot_longer(cols = c(\n    \"fl oz\", \n    \"gluten free\", \n    \"stainless steel\"),\n    names_to = \"type\", \n    values_to = \"t/f\"\n    ) |&gt;\n  filter(`t/f` != \"FALSE\") |&gt;\n  select(-`t/f`) |&gt;\n#The 3 bigram true/false columns are converted into a bigram type column\n  \n  mutate(Title = str_remove(Title, \"with.*\")) |&gt;\n  mutate(Title = str_remove(Title, \",.*\")) |&gt;\n  mutate(Title = str_remove(Title, \"\\\\|.*\")) |&gt;\n  mutate(Title = str_remove(Title, \"\\\\(.*\"))\n#Titles are shortened to remove redundant product information\n\nWe can now neatly plot the 20 most common bigram products in 2020, now that the only the first phrase of the title remains with the bigram as a character variable.\n\n\n\n\n\n\n\n\n\nThis plot is a bar chart highlighting the most common Amazon purchases in 2020 that include the phrase “fl oz”, “gluten free”, or “stainless steel”. The y axis represents the 20 most common products and is color coded by the phrase present, while the x axis counts the number of products purchased in 2020, ranging from 0 to 45. This plot shows us the most popular items with these phrases, such as chia seeds and melatonin, and the prevalence of each word combo against each other. There are 11 gluten free items, 8 items measured in fl oz, and 1 stainless steel item.\nWe can see that even though “fl oz” is the more common bigram, specific products containing “gluten free” in their title are more prevalent. In other words, the prevalence of “fl oz” is spread out among less popular items. Chia seeds were the most popular item, and only one stainless steel item was included, a kitchen scale."
+    "text": "Bigrams\nWhat about bigrams, however? Through unnesting our amazon_2020 dataset and sorting them without stopwords, and filtering any digits with str_detect(), we can sort them into the most common pairs. We are also removing the word “amazon” from the bigrams, to avoid brands such as “Amazon Basics”.\n\n\n\n\n\n\n\n\n\nThe three most common non-numeric bigrams in 2020 were “fl oz”, “gluten free”, and “stainless steel”, reflecting common purchases for drinks, allergen-friendly food, and tools/ instruments. This isn’t very helpful for learning what specific products use these pairings, though. To examine the most common product titles that use these top 3 bigrams, we must str_detect() to pull products with any of the three. However, the titles are often too long to work with. In order to shorten the titles while retaining the bigram (in case the bigram is at the end of the string), we must create a new column that provides each row’s bigram before shortening the title. By creating 3 logical categories for each bigram per product and pivot_longer(), we can create a single type column.\nWe can now neatly plot the 20 most common bigram products in 2020, now that the only the first phrase of the title remains with the bigram as a character variable.\n\n\n\n\n\n\n\n\n\nThis plot is a bar chart highlighting the most common Amazon purchases in 2020 that include the phrase “fl oz”, “gluten free”, or “stainless steel”. The y axis represents the 20 most common products and is color coded by the phrase present, while the x axis counts the number of products purchased in 2020, ranging from 0 to 45. This plot shows us the most popular items with these phrases, such as chia seeds and melatonin, and the prevalence of each word combo against each other. There are 11 gluten free items, 8 items measured in fl oz, and 1 stainless steel item.\nWe can see that even though “fl oz” is the more common bigram, specific products containing “gluten free” in their title are more prevalent. In other words, the prevalence of “fl oz” is spread out among less popular items. Chia seeds were the most popular item, and only one stainless steel item was included, a kitchen scale."
   },
   {
     "objectID": "Mini_Project_1_Floyd.html#sentiment-scores",
@@ -47,26 +110,5 @@
     "title": "Amazon Purchases Data",
     "section": "Conclusion",
     "text": "Conclusion\nWe have seen that even mundane data such as Amazon products can reveal greater patterns around U.S. populations. We determined that Amazon users highly prioritize specific gluten free items and liquids measured in fl oz, and that product words tend to be positive as to attract consumers. We saw that large states like California, Texas, and Florida bought a large amount of masks, but that California customers valued ultra-protective masks like N95s proportionally more. COVID-19 spread patterns could even be observed through this data, as spikes in N95 mask purchases reflected mask mandates and case fluctuations. Data is never neutral, and peeling consumer patterns out of purchase histories demonstrates how stories hide under every point.\nBerke, Alex, Dan Calacci, Robert Mahari, Takahiro Yabe, Kent Larson, and Sandy Pentland. 2023. “Open E-Commerce 1.0: Five Years of Crowdsourced U.S. Amazon Purchase Histories with User Demographics.” Harvard Dataverse. https://doi.org/10.7910/DVN/YGLYDY."
-  },
-  {
-    "objectID": "chloropleth.html",
-    "href": "chloropleth.html",
-    "title": "Chloropleth Maps",
-    "section": "",
-    "text": "Static Plot of Alcohol Consumption Across U.S. States\n\n\n\n\nIn this map, we can see U.S. states with different alcohol consumption rates. Most of the country falls between 2-4.5 gallons per capita. Some standout states include Utah with the lowest consumption, likely due to Mormon populations, and surprisingly New Hampshire with over 4 gallons as the highest. These statistics are sourced from the states dataset in the poliscidata R package, created by Philip Pollock and Barry Edwards. [https://www.rdocumentation.org/packages/poliscidata/versions/2.3.0/topics/states]\n\n\n\n\nInteractive Plot of Alcohol Consumption Across U.S. States\n\n\nThese statistics are sourced from the states dataset in the poliscidata R package, created by Philip Pollock and Barry Edwards. [https://www.rdocumentation.org/packages/poliscidata/versions/2.3.0/topics/states]\n\n\n\n\n\nStatic Plot of Gay Rights Support Across U.S. States\n\n\n\n\nThis map describes 3 bins of gay rights support levels across U.S. states. In general, Northeast states and West Coast states like California and Washington are highly supportive, while the South generally expresses low support. The Midwest region shows medium support, such as Minnesota where the population is mixed between left-leaning cities and rural populations. One notable takeaway is the clear distinction of U.S. regions in gay rights support. These statistics are sourced from the states dataset in the poliscidata R package, created by Philip Pollock and Barry Edwards. [https://www.rdocumentation.org/packages/poliscidata/versions/2.3.0/topics/states]\n\n\n\n\nInteractive Plot of Gay Rights Support Across U.S. States\n\n\nThese statistics are sourced from the states dataset in the poliscidata R package, created by Philip Pollock and Barry Edwards. [https://www.rdocumentation.org/packages/poliscidata/versions/2.3.0/topics/states]"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Henry Floyd",
-    "section": "",
-    "text": "This is a test. I don’t know why I cant get this image to load"
   }
 ]

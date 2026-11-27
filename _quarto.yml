@@ -8,13 +8,14 @@ website:
     left:
       - href: index.qmd
         text: Home
+      - resume.qmd
       - about.qmd
       - Mini_Project_1_Floyd.qmd
       - chloropleth.qmd
 
 format:
   html:
-    theme: cosmo
+    theme: lux
     css: styles.css
     toc: true
     page-layout: full

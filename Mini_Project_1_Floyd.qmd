@@ -175,13 +175,14 @@ Amazon_Bigrams_Words |>
     x = "Most Common Bigrams",
     y = "Count",
     title = "Most Common Non-numeric Amazon Bigrams in 2020") +
-  theme_economist(base_size = 8)
+  theme_clean(base_size = 8)
 ```
 
 The three most common non-numeric bigrams in 2020 were "fl oz", "gluten free", and "stainless steel", reflecting common purchases for drinks, allergen-friendly food, and tools/ instruments. This isn't very helpful for learning what specific products use these pairings, though. To examine the most common product titles that use these top 3 bigrams, we must str_detect() to pull products with any of the three. However, the titles are often too long to work with. In order to shorten the titles while retaining the bigram (in case the bigram is at the end of the string), we must create a new column that provides each row's bigram before shortening the title. By creating 3 logical categories for each bigram per product and pivot_longer(), we can create a single `type` column.
 
 ```{r, fig.dim=c(7,5)}
 #| echo: FALSE
+
 Amazon_Bigrams_Cat <-
   
 amazon_2020 |>
@@ -219,6 +220,7 @@ We can now neatly plot the 20 most common bigram products in 2020, now that the 
 ```{r, fig.dim=c(10,7)}
 #| echo: FALSE
 
+
 Amazon_Bigrams_Cat |>
   
   slice_head(n = 20) |>
@@ -231,7 +233,7 @@ Amazon_Bigrams_Cat |>
     fill = "Bigram Type",
     title = "Most Common Amazon Products Containing a Top-3 Bigram"
   ) +
-  theme_economist(base_size = 10)
+  theme_clean(base_size = 10)
 ```
 
 This plot is a bar chart highlighting the most common Amazon purchases in 2020 that include the phrase "fl oz", "gluten free", or "stainless steel". The y axis represents the 20 most common products and is color coded by the phrase present, while the x axis counts the number of products purchased in 2020, ranging from 0 to 45. This plot shows us the most popular items with these phrases, such as chia seeds and melatonin, and the prevalence of each word combo against each other. There are 11 gluten free items, 8 items measured in fl oz, and 1 stainless steel item.
@@ -292,7 +294,7 @@ mutate(sentiment = positive - negative) |>
   labs(
     y = "Total Sentiment",
     title = "Total Sentiment Scores of Purchases per Day over Time") +
-  theme_economist(base_size = 8)
+  theme_clean(base_size = 8)
 ```
 
 The total sentiment score is entirely positive for this dataset, as the positive words outweight the negative words every day. There seems to be a slight increase in total sentiment score over time, with a few days having very high scores.
@@ -336,7 +338,7 @@ amazon_purchases |>
   labs(
     y = "Product Count",
     title = "Top 20 States Purchasing a Respirator or Safety Mask") +
-  theme_economist(base_size = 8)
+  theme_clean(base_size = 8)
 ```
 
 California dominates the other states in purchasing face masks, followed by New York, Texas, and Florida. This is in line with state population size. However, I became suspiscious of these purchases as I continued my analysis. Because little regulation exists around mask sales, I realized many products counted as a mask that did not necessarily correlate to safety from COVID-19, and I was especially suspicious of Florida and Texas having such high mask purchase rates, being politically red states opposed to mask mandates. Here is an example of a mask product that may not contribute to COVID-19 safety in Texas, for example:
@@ -379,7 +381,7 @@ amazon_purchases |>
    labs(
      y = "Product Count",
      title = "Top 20 States Purchasing a N95 or KN95 Mask") +
-  theme_economist(base_size = 8)
+  theme_clean(base_size = 8)
 ```
 
 From this purchase history alone, we can see that California residents took masking the most seriously, while Texas and Florida proportionally shrank their amount of masks purchased in relation to California. Florida even shrank to the 9th most N95 masks purchased, even though it is the 3rd most populated state.
@@ -404,7 +406,7 @@ amazon_purchases |>
   labs(
     y = "N95 Product Count",
     title = " Distribution of N95 or KN95 Mask Purchases Over the Pandemic") +
-  theme_economist(base_size = 6)
+  theme_clean(base_size = 6)
 ```
 
 While not confirmed without other COVID data, we can estimate that the most severe outbreaks during the pandemic occurred in late 2021/ early 2022, based on the amount of highly protective N95 masks purchased. There is also a noticeably dense spike during early 2021.

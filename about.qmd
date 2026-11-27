@@ -1,9 +1,12 @@
 ---
 title: "About"
+about:
+  template: trestles
+  links:
+    - text: GitHub Pages Reposistory
+      href: https://github.com/floydhen1-prog/floydhen1-prog.github.io
+      target: _blank 
 ---
 
-About this site
 
-```{r}
-1 + 1
-```
+This Quarto website was built with GitHub Pages through RStudio.

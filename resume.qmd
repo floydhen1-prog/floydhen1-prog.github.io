@@ -1,0 +1,62 @@
+---
+title: "Resume"
+format: html
+---
+
+**EDUCATION**  
+---
+
+**Bachelor of Arts** \| St. Olaf College \| Northfield, Minnesota 	 		Expected Graduation: May 2028  
+**Major:** Statistics and Data Science \| **Concentration:** Public Health Studies	GPA: 3.85  
+**Honors & Awards:** St Olaf Dean’s List for 3 Consecutive Semesters  
+**Relevant Coursework:** The Business of Healthcare, Vaccines and Virology, Algorithms for Decision Making
+
+**RESEARCH AND PROJECT EXPERIENCE**  
+---
+
+**Health Tech Strategy & Market Research Intern**, Hugin Medical			        June \- August 2026
+
+* Conducted U.S. healthcare system financial and resource usage research for a HIT health software startup based in Trondheim, Norway  
+* Authored a narrative literature review summarizing the state of global research of guideline-adherent AI in evidence-based medicine, for use in the company’s EU Class IIa Medical Device Regulation application  
+* Delivered presentations on cost estimates and findings for assistance in finding U.S. customers, and interviewed local Indiana health system experts
+
+
+**WORK EXPERIENCE**  
+---
+
+**Pharmacy Technician**, CVS Pharmacy **\|** Bloomington, Indiana                                                  June \- August 2025
+
+* Filled prescriptions and completed patient prescription data entry from doctor’s offices  
+* Assisted customers with insurance and prescription issues, and learned pharmaceutical business and inventory skills  
+* Collaborated with pharmacists under high patient volume, low-staff conditions
+
+**Waitstaff**, Redbud Hills Retirement Home \| Bloomington, Indiana 		       August 2023 \- August 2024
+
+* Accommodated and served meals to senior residents, and spent time making connections to hold meaningful discussions with residents
+
+**Tree Tender,** CanopyBloomington \| Bloomington, Indiana 				             June- July 2024
+
+* Collaborated with fellow students to manage and maintain newly planted trees in public parks and trails  
+* Engaged in community learning events designed to teach dendrology and strengthen peer relationships
+
+**CO-CURRICULAR EXPERIENCE**  
+---
+
+**Member**, Public Health Club \| St. Olaf College 			                                     September 2026 \- Present
+
+* Participation in St Olaf’s student-led Public Health Equity and Wellness Club, to raise awareness for important community initiatives and outreach opportunities 
+
+**Member**, Badminton Club \| St. Olaf College 			                                     September 2026 \- Present
+
+* Recently joined St Olaf’s student-led Badminton Club, a recreational space to play casual matches with peers and learn technical skills from advanced students
+
+**Member**, Norseman Band \| St. Olaf College 			                                September 2024 \- May 2025
+
+* Continued tuba performance after 7 years of brass experience    
+* Rehearsed music as an ensemble and section to perform at concerts and campus events
+
+**SKILLS**  
+---
+
+**Technical:** R (Advanced), Python and SAS (Basic)  
+**Language:** German and American Sign Language (Intermediate)
